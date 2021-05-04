@@ -62,6 +62,7 @@ Interface to the python module pysubgroup for efficiently
 finding subgroups.
 }
 \examples{
+if (FALSE){
 library(EffectLiteR)
 
 dat <- read.csv(system.file("extdata", 
@@ -89,4 +90,6 @@ task <- subgroupsem(f_fit = f_fit,
 summary(task)
 
 plot(task)
+}
+
 }

@@ -1,5 +1,6 @@
 #' @export
-plot.subgroupsem <- function(obj) {
+plot.subgroupsem <- function(x, ...) {
+    obj <- x
     x <- 1:length(obj$subgroups)
     y <- sapply(obj$subgroups, function(element) element$quality)
     plot(
@@ -16,7 +17,8 @@ plot.subgroupsem <- function(obj) {
 }
 
 #' @export
-summary.subgroupsem <- function(obj) {
+summary.subgroupsem <- function(object, ...) {
+    obj <- object
     cat("General information:")
     cat("\n\n")
     

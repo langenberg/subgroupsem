@@ -1,22 +1,30 @@
 Package: subgroupsem
 Type: Package
 Title: subgroupsem
-Version: 0.0-1
+Version: 0.0.2-9001
 Authors@R: c(person(given = "Benedikt", family = "Langenberg",
                     role  = c("aut", "cre"),
                     email = "benedikt.langenberg@gmail.com"),
              person(given = "Florian", family = "Lemmerich",
                     role  = c("ctb"),
-                    email = "florian@lemmerich.net")
+                    email = "florian@lemmerich.net"),
+             person(given = "Christoph", family = "Kiefer",
+                    role  = c("ctb"),
+                    email = "christoph.kiefer@uni-bielefeld.de")
             )
-Author: Benedikt Langenberg [aut, ctb], Florian Lemmerich [ctb]
+Author: Benedikt Langenberg [aut, ctb], 
+        Florian Lemmerich [ctb],
+        Christoph Kiefer [ctb]
 Maintainer: The package maintainer <benedikt.langenberg@gmail.com>
 Depends:
     R (>= 3.5.0)
 Imports:
-    reticulate (>= 1.12)
+    reticulate (>= 1.12),
+    lavaan
+Suggests:
+    EffectLiteR
 Description: To be written.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

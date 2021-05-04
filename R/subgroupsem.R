@@ -28,6 +28,7 @@
 #' @param ... Additional arguments to be passed to \code{f_fit}.
 #' @return List containing the time consumed and the groups.
 #' @examples
+#' if (FALSE){
 #' library(EffectLiteR)
 #' 
 #' dat <- read.csv(system.file("extdata", 
@@ -55,6 +56,8 @@
 #' summary(task)
 #' 
 #' plot(task)
+#' }
+#' 
 subgroupsem <- function(f_fit,
                         dat,
                         columns = names(dat),
