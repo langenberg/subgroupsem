@@ -58,7 +58,7 @@ activate_condaenv <- function() {
 load_reticulate <- function() {
     if (!is_reticulate_attached()) {
         message("Attaching library reticulate...")
-        library(reticulate)
+        requireNamespace("reticulate")
     }
 }
 
